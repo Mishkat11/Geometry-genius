@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>geometry genius</title>
+    <!-- daisy setup  -->
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <header>
+    <nav class="bg-blue-300  w-11/12 mx-auto">
+<div class="flex items-center justify-between  px-8 py-3">
+    <div>
+        <p>Interactive </p>
+        <p>geometry Genius</p>
+    </div>
+    <div class="">
+<button class="btn btn-primary ">blog</button>
+    </div>
+</div>
+    </nav>
+
+<main class=" mt-12 "  >
+    <!-- parent div  -->
+<div class="flex  flex-col lg:flex-row">
+    <!-- card div  -->
+<div class="flex-1 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+    <!-- first card  -->
+    <div class="card  bg-base-100 shadow-xl">
+        <figure><img src="./images/triangle.png" alt="triangle" /></figure>
+        <div class="card-body">
+          <h2 class="text-[25px] font-bold text-center">Triangle</h2>
+          <p class="text-center">Area(A) = 0.5 X b X h</p>
+         <p class="text-center">
+            <input type="text" placeholder="b" class=" w-20 px-3 bg-gray-100" name="" id="b-input"> 
+          <span>cm</span>
+          <input type="text" placeholder="h" class=" w-20 px-3 bg-gray-100" name="" id="h-input"> 
+          <span>cm</span>
+         </p>
+         <p id="area">Area: </p>
+          <div class="card-actions">
+            <button onclick="clickMe(this)" class="btn btn-primary w-full">Calculate</button>
+          </div>
+        </div>
+      </div>
+    <!-- second card  -->
+    <!-- <div class="card  bg-base-100 shadow-xl">
+        <figure><img src="./images/triangle.png" alt="triangle" /></figure>
+        <div class="card-body">
+          <h2 class="text-[25px] font-bold text-center">Triangle</h2>
+          <p class="text-center">Area(A) = 0.5 X b X h</p>
+         <p class="text-center">
+            <input type="text" placeholder="b" class=" w-20 px-3 bg-gray-200" name="" id="b-input"> 
+          <span>cm</span>
+          <input type="text" placeholder="h" class=" w-20 px-3 bg-gray-200" name="" id="h-input"> 
+          <span>cm</span>
+         </p>
+          <div class="card-actions">
+            <button class="btn btn-primary w-full">Calculate</button>
+          </div>
+        </div>
+      </div> -->
+   <!-- third card -->
+    <!-- <div class="card  bg-base-100 shadow-xl">
+        <figure><img src="./images/triangle.png" alt="triangle" /></figure>
+        <div class="card-body">
+          <h2 class="text-[25px] font-bold text-center">Triangle</h2>
+          <p class="text-center">Area(A) = 0.5 X b X h</p>
+         <p class="text-center">
+            <input type="text" placeholder="b" class=" w-20 px-3 bg-gray-200" name="" id="b-input"> 
+          <span>cm</span>
+          <input type="text" placeholder="h" class=" w-20 px-3 bg-gray-200" name="" id="h-input"> 
+          <span>cm</span>
+         </p>
+          <div class="card-actions">
+            <button class="btn btn-primary w-full">Calculate</button>
+          </div>
+        </div>
+      </div> -->
+   
+
+</div>
+<!-- calculation div  -->
+<div class="w-[300px]">
+<p class="text-2xl text-center"> Area calculator</p>
+
+</div>
+
+</div>
+
+</main>
+
+  </header>
+  <script src="style.js"></script>
+</body>
+</html>
